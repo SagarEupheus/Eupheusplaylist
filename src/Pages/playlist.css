@@ -1,0 +1,18 @@
+@media (max-width: 426px){
+    .playlistw90vw{
+        width: 90vw !important;
+}   
+.playlist70vw{
+    width: 70vw;
+}
+.playlist20vw{
+    width: 20vw;
+}
+}
+
+@media (max-width: 375px){
+    .playlistw90vw{
+        width: 90vw !important;
+}   
+
+}

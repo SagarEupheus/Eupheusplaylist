@@ -4,7 +4,7 @@ import "./audio.css"
 
 const Audio = () => {
   return (
-    <div className='min-w-[80vw] relative playlistAudio flex justify-center items-center '>
+    <div className='w-[80vw] w426 lg:w-[80vw] md:w-[80vw] relative playlistAudio flex justify-center items-center '>
       <Playlist />
     </div>
   )
