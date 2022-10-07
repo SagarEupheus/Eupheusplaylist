@@ -21,8 +21,9 @@ const Playlist = (props,ref) => {
 
   return (
     <>
-      <div className="w-[80vw] w426 lg:w-[80vw] md:w-[80vw] relative playlistAudio flex justify-center items-center">
-        <div className="flex flex-col gap-3 playlistw90vw overflow-auto lg:h-[500px] md:h-[400px] h-[380px] lg:w-[80vw] md:w-[70vw]">
+      <div className="w-[80vw] w426 lg:w-[80vw]  relative mdplaylist playlistAudio flex justify-center items-center">
+        {/* <div className="flex flex-col gap-3 playlistw90vw overflow-auto lg:h-[500px] md:h-[400px] h-[380px] lg:w-[80vw] md:w-[70vw]"> */}
+        <div className="flex flex-col gap-3 playlistw90vw overflow-auto playlisth lg:h-[500px] md:h-[400px] h-[380px] lg:w-[80vw] md:w-[70vw]">
           {/* {SongList.map((songs, i) => {
         return ( */}
 

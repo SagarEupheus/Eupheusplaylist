@@ -10,7 +10,7 @@ const Footer = () => {
   // }));
 
   return (
-    <div className='bg-zinc-800 h-[10vh] top-[90px] lg:relative relative footermain bottom-0 lg:top-[0px]]'>
+    <div className='bg-zinc-800 h-[10vh] absolute bottom-0 w-full footermain  '>
         
         <div className="h-[10vh]  bg-[#1f656f] lg:relative footer  relative z-30  md:relative songs">
         <div className="playlist">

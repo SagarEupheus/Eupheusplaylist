@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <div className="main flex ">
+        <div className="main flex relative ">
           <Sidebar state={sidebarshow} toggle={toggle} />
           <Routes>
             <Route path="/" element={<Home />}></Route>
