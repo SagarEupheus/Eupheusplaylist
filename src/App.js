@@ -1,12 +1,13 @@
 import "./App.css";
 import Sidebar from "./Components/Sidebar.js";
-import Audio from "./Pages/Audio.js";
+// import Audio from "./Pages/Audio.js";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./Components/Footer";
 import Home from "./Pages/Home";
 // import { GiHamburgerMenu } from "react-icons/gi";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { FaHamburger } from "react-icons/fa";
+import Playlist from "./Pages/Playlist";
 
 function App() {
   const [sidebarshow, setShowsidebar] = useState(false);
@@ -15,6 +16,9 @@ function App() {
     setShowsidebar(status);
   };
 
+  const playlistRef = useRef();
+
+
   return (
     <>
       <BrowserRouter>
@@ -22,7 +26,7 @@ function App() {
           <Sidebar state={sidebarshow} toggle={toggle} />
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/audio" element={<Audio />}></Route>
+            <Route path="/audio" element={<Playlist ref={playlistRef} />}></Route>
           </Routes>
         </div>
         <FaHamburger

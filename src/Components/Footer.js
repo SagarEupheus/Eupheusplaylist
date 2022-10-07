@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { forwardRef } from 'react'
 import "./footer.css";
 
+// const Footer = forwardRef((props,refs) => {
 const Footer = () => {
+
+  // React.useImperativeHandle(refs, () => ({
+  //   sendAudio() {
+  //   },
+  // }));
+
   return (
-    <div className='bg-zinc-800 h-[10vh] top-[90px] lg:relative relative footermain lg:top-[0px]]'>
+    <div className='bg-zinc-800 h-[10vh] top-[90px] lg:relative relative footermain bottom-0 lg:top-[0px]]'>
         
         <div className="h-[10vh]  bg-[#1f656f] lg:relative footer  relative z-30  md:relative songs">
         <div className="playlist">
@@ -20,4 +27,4 @@ const Footer = () => {
   )
 }
 
-export default Footer
+export default forwardRef(Footer)

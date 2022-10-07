@@ -6,13 +6,14 @@ import { AiOutlineClose } from "react-icons/ai";
 import "./sidebar.css"
 
 const Sidebar = ({state, toggle}) => {
-	console.log(state  + " hoi aioshdaj")
+	// console.log(state  + " hoi aioshdaj")
 	const [hidden, setHidden] = useState(true)
 	// const [hamburger, setHamnburger] = useState(window.screen > 768 ? true : false )
 
 	const hideSide = () => {
 		toggle(false)
 	};
+
   return (
     <>
 	<div className={`flex flex-col items-center absolute lg:relative md:relative z-20 lg:!w-[20vw] md:!w-[20vw] ${state ? "sidebarwidth178" :"sidebarwidth80"}  h-[90vh] overflow-hidden text-gray-400 bg-gray-900 `}>
